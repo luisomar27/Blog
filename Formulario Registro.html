@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlazamos el Css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/comportamiento.css">
+
+    <!-- Enlazamos el JavaScript -->
+    <script type="text/javascript" src="./javascript/validar.js"></script>
+    <script type="text/javascript" src="./javascript/boton.js"></script>
+
+    <!-- Titulo de la paginas -->
+    <title>Formulario animado</title>
+
+
+</head>
+
+<body>
+    <!-- AGREGAMOS UN ONSUBMIT QUE RETORNE LA VARIABLE-->
+    <form action="" class="formulario" onsubmit="return validar();">
+        <!-- TITULO DE LA PAGINA -->
+        <h1 class="formulario__titulo">CREE SU CUENTA</h1>
+
+        <!-- Contiene a todos los inputs -->
+        <div class="contenedor__inputs">
+
+            <!-- A CADA INPUT SE LE AGREGA UN ID PARA SELECCIONARLO CON JAVASCRIPT -->
+
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48">
+            <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" class="input-100">
+            <input type="text" id="password" name="pass" placeholder="contraseña" class="input-48">
+            
+            <!-- El parrafo que se mostrara si sucede un error -->
+      <!--   <p class="input-text" id="parrafo"></p>
+
+            <input type="password" id="clave" name="clave" placeholder="Contraseña" class="input-48">
+            <input type="password" id="clave2" name="clave2" placeholder="Confirmar contraseña" class="input-48">
+            <input type="text" id="telefono" name=" telefono" placeholder="Número telefónico" class="input-100"> --> 
+
+            <!-- Boton Submit cuando se haga click haga una acción--> 
+            <input type="submit" id="submitbutton" value="Registrarse" class="btn-registrar" id="submitRegistro" onclick="return changeText('submitbutton');">
+
+        </div>
+    </form>
+</body>
+</html>
