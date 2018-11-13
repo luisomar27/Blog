@@ -47,7 +47,7 @@ h1 {
     flex-wrap: wrap;
     /*SEPARAMOS LOS INPUTS*/
     justify-content: space-between;
-
+ 
 }
 
 /* inputs que estan al lado de los otros */
